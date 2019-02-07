@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <title>Diplom</title>
+  </head>
+  <style>
+
+
+.header {
+  display: block;
+  height: 10vw;
+  background: url(jpeg/background.jpg) no-repeat;
+  text-align: center;
+  line-height: 10vw;
+  font-family: 'Lobster', cursive;
+  font-size: 200%;
+  outline: 1px solid black;
+  background-size: 100%;
+}
+
+.cube {
+  color: #fff;
+  margin: 12px 45px;
+  float: left;
+}
+
+.cube {
+  width: 95px;
+  /*float: right;*/
+  padding-right: 150px;
+}
+
+.side {
+  height: 95px;
+  line-height: 95px;
+  position: absolute;
+  text-align: center;
+  width: 95px;
+}
+
+.top {
+  background: #33cc54;
+  transform: rotate(-45deg) skew(15deg, 15deg);
+}
+
+.top:hover,
+.left:hover,
+.right:hover {
+  transform: none;
+  background: yellow;
+  color: red;
+  transition: 1s;
+}
+
+.left {
+  background: #2db34a;
+  transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+}
+
+.right {
+  background: #26973e;
+  transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+}
+
+iframe {
+  float: left;
+  outline: 1px solid red;
+}
+.menu li{
+  /*display: inline;*/
+  border-style: groove;
+  padding: 5px 20px 5px 20px;
+  margin-right: 20px;
+  /*display: flex;
+  flex-direction: row;*/
+} 
+
+.menu li:hover {
+  background: #90EE90;
+  transition: 1s;
+}
+
+.menu li a {
+  text-decoration: none;
+
+  
+}
+
+.menu li a:hover {
+  text-decoration: blink;
+  
+}
+
+.menu {
+  width:70vw;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-basis: 10vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+} 
+body {
+   margin-left: 10%;
+  margin-right: 10%;
+   /*background: linear-repeat-gradient */
+  /*(#55ddff, #0081b5);*/
+  background: url(jpeg/mainfon.jpg) no-repeat;
+  z-index: -1;
+  -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+.half1
+{
+  float:left;
+  width:60%
+ 
+  
+}
+#qwest {
+  width:150px;
+  height:30px;
+
+}
+#vosem {
+  display: none;
+}
+#vosem:checked~.qwerty {
+  display: none;
+}
+.opros {
+  background: #66CDAA;
+  border-radius: 33px;
+  width: 15vw;
+  float: left;
+}
+.aside {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  flex-basis: 10vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#send {
+   text-align: right;
+}
+</syle>
+<body link="black">
+  <div class="header">Утопия</div>
+  <div> 
+    <ul class="menu">
+      <li><a href="site.html" onclick="func('dfh')">Главная</a></li>
+      <li><a href="#" onclick="func('dfh')">Новости</a></li>
+      <li><a href="#" onclick="func('dfh')">Архив</a></li>
+      <li><a href="#" onclick="func('dfh')">Видео</a></li>
+      <li><a href="#" onclick="func('dfh')">Регистрация</a></li>
+      
+    </ul></div>
+ 
+
+<div class=half1>
+<div class="title header2">
+  <a href="info1.html"><h2>Хотите ли вы быть частью капитализма?</h2></a>
+    <p><a href="info1.html"><img src="jpeg/bur.jpg" width="90%" height="300px" alt="невозможно загрузить фаил"></a></p>
+</div>
+<div class="title header3">
+  <a href="info2.html"><h2>маДУРА или нет?</h2></a>
+    <p><a href="info2.html"><img src="jpeg/maduro.jpg" width="90%" height="300px" alt="невозможно загрузить фаил"></a></p>
+</div>
+<div class="title header4">
+  <a href="info3.html"><h2>Национальная идея....Есть идеи?</h2></a>
+    <p><a href="info2.html"><img src="jpeg/naz.jpg" width="90%" height="300px" alt="невозможно загрузить фаил"></a></p>
+</div>
+</div>
+<div class=half2>
+  <h3>Поставьте оценку нашему сайту</h3>
+  
+<div class="aside">
+ <div class="opros opros1">  
+  <h4>Ваш возраст</h4>
+<p><input type="radio" name="age" id="all" onclick="Age('a')">Вам меньше 20 лет</p>
+<p><input type="radio" name="age" id="all" onclick="Age('b')">Вам от 20 до 40 лет</p>
+<p><input type="radio" name="age" id="all" onclick="Age('c')">Вам больше 40лет</p>
+</div>
+<div class="opros opros2"> 
+   <h4>Ваша оценка</h4>
+<p><input type="radio" name="state" id="all" onclick="State('d')">Так себе</p>
+<p><input type="radio" name="state" id="all" onclick="State('e')">Хорошо</p>
+<p><input type="radio" name="state" id="all" onclick="State('f')">Отлично</p>
+<!-- <button onclick="Message()">Подтвердить</button> -->
+<!-- <input type="checkbox" id="vosem" onclick="Message()"><label for="vosem">submit --><!-- <button onclick="Message()">Подтвердить</button> -->
+<input type="submit" name="send" value="Отправить" onclick="Message()">
+<!-- <input type="reset" id="all" value="Очистить"> -->
+ </div>
+ 
+ </div>
+</body>
+  </html>
+<script>
+var myAge;
+var myStatus;
+
+function Age(currentAge){
+myAge = currentAge;
+}
+
+function State(currentStatus){
+myStatus = currentStatus
+}
+
+function Message(){
+switch(myAge + myStatus){
+case('ad'):
+alert("Вы слишком молоды, чтоб давать такие оценки");
+break;
+
+case('ae'):
+alert("Несмотря на ваш возраст, вы все же можете трезво оценивать");
+break;
+
+case('af'):
+alert("Хоть вы и молоды, вы блестяще разбираетесь в сайтах!");
+break;
+
+case('bd'):
+alert("Вы вроде уже взрослый, а говорите глупости");
+break;
+
+case('be'):
+alert("Сразу видно, вы немного разбираетесь");
+break;
+
+case('bf'):
+alert("Вы в рассвете сил, как физических так и интелектуальных");
+break;
+
+case('cd'):
+alert("Седина в бороду бес в ребро?");
+break;
+
+case('ce'):
+alert("Сразу видно опытного человека");
+break;
+
+case('cf'):
+alert("Да вы совсем не отстаете от прогресса!");
+break;
+
+default:
+alert('Мы еще не обработали такое сочетание возраста и настроения');
+break;
+}
+}
+</script>
+

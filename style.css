@@ -1,0 +1,142 @@
+.header {
+  display: block;
+  height: 10vw;
+  background: url(jpeg/background.jpg) no-repeat;
+  text-align: center;
+  line-height: 10vw;
+  font-family: 'Lobster', cursive;
+  font-size: 200%;
+  outline: 1px solid black;
+  background-size: 100%;
+}
+
+.cube {
+  color: #fff;
+  margin: 12px 45px;
+  float: left;
+}
+
+.cube {
+  width: 95px;
+  /*float: right;*/
+  padding-right: 150px;
+}
+
+.side {
+  height: 95px;
+  line-height: 95px;
+  position: absolute;
+  text-align: center;
+  width: 95px;
+}
+
+.top {
+  background: #33cc54;
+  transform: rotate(-45deg) skew(15deg, 15deg);
+}
+
+.top:hover,
+.left:hover,
+.right:hover {
+  transform: none;
+  background: yellow;
+  color: red;
+  transition: 1s;
+}
+
+.left {
+  background: #2db34a;
+  transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+}
+
+.right {
+  background: #26973e;
+  transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+}
+
+iframe {
+  float: left;
+  outline: 1px solid red;
+}
+.menu li{
+  /*display: inline;*/
+  border-style: groove;
+  padding: 5px 20px 5px 20px;
+  margin-right: 20px;
+  /*display: flex;
+  flex-direction: row;*/
+} 
+
+.menu li:hover {
+  background: #90EE90;
+  transition: 1s;
+}
+
+.menu li a {
+  text-decoration: none;
+
+  
+}
+
+.menu li a:hover {
+  text-decoration: blink;
+  
+}
+
+.menu {
+  width:70vw;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-basis: 10vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+} 
+body {
+   margin-left: 10%;
+  margin-right: 10%;
+   /*background: linear-repeat-gradient */
+  /*(#55ddff, #0081b5);*/
+  background: url(jpeg/mainfon.jpg) no-repeat;
+  z-index: -1;
+  -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+.half1
+{
+  float:left;
+  width:60%
+ 
+  
+}
+#qwest {
+  width:150px;
+  height:30px;
+
+}
+#vosem {
+  display: none;
+}
+#vosem:checked~.qwerty {
+  display: none;
+}
+.opros {
+  background: #66CDAA;
+  border-radius: 33px;
+  width: 15vw;
+  float: left;
+}
+.aside {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  flex-basis: 10vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#send {
+   text-align: right;
+}

@@ -1,0 +1,43 @@
+<html>
+<meta charset="utf-8">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <title>Diplom</title>
+  <style>
+.qwest1 {
+    position:absolute;
+    
+    border:1px solid black;
+}
+.qwest2 {
+    position:absolute;
+    visibility:hidden;
+    border:1px solid red;
+}
+input#show:checked {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+<div class=qwest1>
+<p><input type="radio" name="age" id="all" onclick="Age('a')">Вам меньше 20 лет</p>
+<p><input type="radio" name="age" id="all" onclick="Age('b')">Вам от 20 до 40 лет</p>
+<p><input type="radio" name="age" id="all" onclick="Age('c')">Вам больше 40лет</p>
+</div>
+<div class="qwest2">
+<p><input type="radio" name="state" id="all" onclick="State('d')">Так себе</p>
+<p><input type="radio" name="state" id="all" onclick="State('e')">Хорошо</p>
+<p><input type="radio" name="state" id="all" onclick="State('f')">Отлично</p>
+</div>
+<!--<button onclick="Message()">Подтвердить</button>-->
+<!--<input type="submit" id="show" value="Отправить" onclick="Message()">-->
+<!--<input type="reset" id="all" value="Очистить">-->
+<input type="checkbox" id="vosem"><label for="vosem">
+    Подтвердить</label>
+    <input type="checkbox" id="vosem"><label for="vosem">submit
+</body>
+</html>
