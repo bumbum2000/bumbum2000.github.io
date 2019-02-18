@@ -140,3 +140,98 @@ body {
 #send {
    text-align: right;
 }
+.Block {
+  display: block;
+  width:300px;
+  float:left;
+  height:300px;
+  border:1px solid black;
+}
+h3 {
+  z-index: 1;
+}
+b {
+  font-size: large;
+  color: red;
+}
+.news1 {
+  background-image: url(jpeg/chernobyl.jpg);
+  background-size: cover;
+    width: x;
+    height: y;
+}
+.news2 {
+   background-image: url(jpeg/war.png);
+  background-size: cover;
+    width: x;
+    height: y;
+}
+.news3 {
+   background-image: url(jpeg/novichek.jpg);
+  background-size: cover;
+    width: x;
+    height: y;
+}
+.news4 {
+   background-image: url(jpeg/yrsky.jpg);
+  background-size: cover;
+    width: x;
+    height: y;
+}
+.news5 {
+   /*background-image: url(jpeg/eu_nato.jpg) no-repeat;*/
+  background: url(jpeg/eu_nato.jpg) 100% 100% no-repeat;
+  background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+.news6 {
+   background-image: url(jpeg/kurils.jpg);
+  background-size: cover;
+    width: x;
+    height: y;
+}
+.end {
+  display: block;
+  height: 100px;
+  background: black;
+  font-size: 70%;
+  margin-top: 10px;
+  padding: 15px; clear : both;
+}
+.end a {
+color: #ff0;
+padding: 10px;
+}
+.end a:hover {
+color: #f00;
+}
+.end p {
+padding: 2px;
+text-align: center;
+color: white;
+}
+
+.clearfloat {
+
+clear: both;
+}
+.blank {
+  height:10px;
+}
+.clearfloat {
+
+clear: both;
+}
+.text {
+  padding:5px;
+  margin: 5px;
+  border: 4px double black;
+  text-align: justify;
+}
+.video {
+  float: left;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
