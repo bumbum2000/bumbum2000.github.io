@@ -16,7 +16,7 @@
   <div> 
     <ul class="menu">
       <li><a href="index.html" onclick="func('dfh')">Главная</a></li>
-      <li><a href="arch.html" onclick="func('dfh')">Архив</a></li>
+      <li><a href="#" onclick="Sourse()">Для немых</a></li>
       <li><a href="reg.html" onclick="func('dfh')">Регистрация</a></li>
       <li><a href="discussion.html" onclick="func('dfh')">Обсуждение</a></li>
       <li><a href="news.html" onclick="func('dfh')">Новости</a></li>
@@ -63,9 +63,16 @@
 </body>
   </html>
 <script>
+var Ysourse
+ 
 var myAge;
 var myStatus;
-
+function Sourse()
+{
+  var enter = prompt ("введите что я должна сказать")
+  var utterThis = new SpeechSynthesisUtterance(enter);
+window.speechSynthesis.speak(utterThis);
+}
 function Age(currentAge){
 myAge = currentAge;
 }

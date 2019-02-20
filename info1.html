@@ -16,7 +16,7 @@
   <div> 
     <ul class="menu">
       <li><a href="index.html" onclick="func('dfh')">Главная</a></li>
-      <li><a href="arch.html" onclick="func('dfh')">Архив</a></li>
+      <li><a href="#" onclick="Sourse()">Для немых</a></li>
       <li><a href="reg.html" onclick="func('dfh')">Регистрация</a></li>
       <li><a href="discussion.html" onclick="func('dfh')">Обсуждение</a></li>
       <li><a href="news.html" onclick="func('dfh')">Новости</a></li>
@@ -28,7 +28,7 @@
        frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
        allowfullscreen></iframe>
         </div>
-        <h2>Покушение на Мадуро</h2>
+        <h2>Хотите ли вы быть частью капитализма?</h2>
         <div class="text text1">
            Большинство современных стран сегодня живут при капитализме, в рамках капиталистической парадигмы, которая заключается в том, что капитал должен расти, цель бизнеса — получение прибыли, частная собственность — основа экономики и так далее.
 
@@ -100,4 +100,68 @@
 </div>
     </body>
     </html>
-    
+   <script>
+var Ysourse
+ 
+var myAge;
+var myStatus;
+function Sourse()
+{
+  var enter = prompt ("введите что я должна сказать")
+  var utterThis = new SpeechSynthesisUtterance(enter);
+window.speechSynthesis.speak(utterThis);
+}
+function Age(currentAge){
+myAge = currentAge;
+}
+
+function State(currentStatus){
+myStatus = currentStatus
+}
+
+function Message(){
+switch(myAge + myStatus){
+case('ad'):
+alert("Вы слишком молоды, чтоб давать такие оценки");
+break;
+
+case('ae'):
+alert("Несмотря на ваш возраст, вы все же можете трезво оценивать");
+break;
+
+case('af'):
+alert("Хоть вы и молоды, вы блестяще разбираетесь в сайтах!");
+break;
+
+case('bd'):
+alert("Вы вроде уже взрослый, а говорите глупости");
+break;
+
+case('be'):
+alert("Сразу видно, вы немного разбираетесь");
+break;
+
+case('bf'):
+alert("Вы в рассвете сил, как физических так и интелектуальных");
+break;
+
+case('cd'):
+alert("Седина в бороду бес в ребро?");
+break;
+
+case('ce'):
+alert("Сразу видно опытного человека");
+break;
+
+case('cf'):
+alert("Да вы совсем не отстаете от прогресса!");
+break;
+
+default:
+alert('Мы еще не обработали такое сочетание возраста и настроения');
+break;
+}
+}
+</script>
+
+ 
