@@ -284,7 +284,7 @@ nav a {
   text-transform: uppercase;
 }
 
-.topmenu li a:hover { color: #E6855F; }
+.topmenu li a:focus { color: #E6855F; }
 .submenu {
   background: white;
   border: 2px solid #003559;
@@ -298,7 +298,7 @@ nav a {
   transform-origin: 0% 0%;
   transition: .6s ease-in-out;
 }
-.topmenu > li:hover .submenu{
+.topmenu > li:focus .submenu{
   visibility: visible;
   opacity: 1;
   transform: perspective(600px) rotateX(0deg);
