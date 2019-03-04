@@ -9,7 +9,15 @@
   <link href="style.css" rel="stylesheet">
   <title>Diplom</title>
   <style>
-
+#label1 {
+ /* position: absolute;*/
+  /*visibility: hidden;*/
+}
+#label1:checked ~ .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0deg);
+}
  
 </style>
 </head>
@@ -25,19 +33,27 @@
       <li><a href="news.html" onclick="func('dfh')">Новости</a></li>
       
     </ul></div>
-    <input id="menu" type="checkbox">
-<label for="menu">Показать меню</label>
-<label for="menu">Спрятать меню</label>
-    <ul class="v768 menu-list">
-  <li><a href="index.html" onclick="func('dfh')">Главная</a></li>
+    
+    <nav class="v768">
+<input type="checkbox" id="label1">
+<label for="label1" class="visible">Меню</label>
+  <ul class="topmenu">
+       <li><a href="##" class="down">Меню</a>
+ 
+      <ul class="submenu">
+        <li><a href="index.html" onclick="func('dfh')">Главная</a></li>
         <li><a href="reg.html" onclick="func('dfh')">Регистрация</a></li>
         <li><a href="news.html" onclick="func('dfh')">Новости</a></li>
         <li><a href="discussion.html" onclick="func('dfh')">Обсуждение</a></li>
-</ul>
+      </ul>
+    </li>
+    
+  </ul>
+ </nav>
 
 <div class=half1>
 <div class="title header2">
-  <a href="info1.html"><h2 class="mobile">Хотите ли вы быть частью капитализма?</h2></a>
+  <a href="info1.html"><h2>Хотите ли вы быть частью капитализма?</h2></a>
     <p><a href="info1.html"><img src="jpeg/bur.jpg" width="90%" height="90%" alt="невозможно загрузить фаил"></a></p>
 </div>
 <div class="title header3">

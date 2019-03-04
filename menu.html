@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <script src="jj.js"></script>
+  <!-- <link href="style.css" rel="stylesheet"> -->
+  <title>Diplom</title>
+  <style>
+  #menu {
+  /*display: none;*/
+  background: white;
+  border: 2px solid #003559;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width: 150px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: .6s ease-in-out;
+  
+
+}
+label[for=menu] {
+  top: 20vw;
+  display: block;
+  left:20vw;
+}
+#menu~ul {
+  display: none;
+
+  list-style: none;
+  padding-left: 0;
+}
+#menu:not(:checked)~label[for=menu]:nth-of-type(2) {
+  display: none;
+}
+
+#menu:checked+label[for=menu] {
+  display: none;
+}
+
+#menu:checked~ul{
+  display: block;
+   opacity: 1;
+  transform: perspective(600px) rotateX(0deg);
+  transition: 3s;
+}
+
+
+
+#submenu~ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 120px;
+  outline: 1px solid blue;
+}
+#submenu:checked~ul {
+  display: block;
+}
+a:visited, label {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#menu~ul>li:hover {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+#submenu~ul>li:hover {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+.menu-list li a {
+  color: #7f7f7f;
+  font-size: 13px;
+  line-height: 36px;
+  padding: 0 25px;
+  font-family: 'Kurale', serif;
+  display: block;
+  text-decoration: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  
+}
+  </style>
+</head>
+
+<body link="black">
+<input id="menu" type="checkbox">
+<label for="menu">Показать меню</label>
+<label for="menu">Спрятать меню</label>
+<ul class="v768 menu-list">
+  <li><a href="index.html" onclick="func('dfh')">Главная</a></li>
+        <li><a href="reg.html" onclick="func('dfh')">Регистрация</a></li>
+        <li><a href="news.html" onclick="func('dfh')">Новости</a></li>
+        <li><a href="discussion.html" onclick="func('dfh')">Обсуждение</a></li>
+</ul>
+</body>
+</html>
+
